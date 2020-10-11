@@ -7,8 +7,7 @@ import { AppBar, Toolbar, Typography, Button, Link } from '@material-ui/core';
 // Styles
 import { styles } from "./Nav.styles";
 
-
-
+// Component
 export default function Nav() {
   const classes = styles();
 
