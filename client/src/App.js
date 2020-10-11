@@ -5,7 +5,7 @@ import React from "react";
 import { Container, Box } from '@material-ui/core';
 
 // Components
-import { Nav, Title } from "./components";
+import { Nav, Title, Form } from "./components";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Title />
         </Box>
       </Container>
+      <Form />
     </>
   );
 }
