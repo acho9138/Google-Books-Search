@@ -7,7 +7,7 @@ import { Paper, Typography, Grid, Button, Box } from '@material-ui/core';
 // Custom
 import { styles } from "./BookResult.style"
 
-export default function Variants() {
+const BookResult = (props) => {
   const classes = styles();
 
   return (
@@ -27,8 +27,8 @@ export default function Variants() {
             <Grid item xs={3}>
               <Button variant="contained">View</Button>
               <Button variant="contained" color="primary">
-                Save
-            </Button>
+                {props.isSave ? "Save" : "Delete"}
+              </Button>
             </Grid>
             <Grid item xs={3}>
               <img src={"https://via.placeholder.com/150"} />
@@ -46,3 +46,5 @@ export default function Variants() {
     </>
   );
 }
+
+export default BookResult

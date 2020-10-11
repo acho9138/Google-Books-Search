@@ -8,6 +8,7 @@ import { Container, Box } from '@material-ui/core';
 // Components
 import { Nav, Title } from "./components";
 import { Search } from "./pages/Search";
+import { Saved } from "./pages/Saved";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Router basename="/">
         <Switch>
           <Route exact path={["/", "/search"]}><Search /></Route>
-          {/* <Route exact path="/saved"><Saved /></Route> */}
+          <Route exact path="/saved"><Saved /></Route>
         </Switch>
       </Router>
     </>
