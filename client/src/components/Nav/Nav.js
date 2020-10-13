@@ -19,8 +19,8 @@ export default function Nav() {
           <Typography variant="h6" className={classes.title}>
             Google Books
           </Typography>
-          <Button color="inherit"><Link to="/">Search</Link></Button>
-          <Button color="inherit"><Link to="saved">Saved</Link></Button>
+          <Button color="inherit"><Link className={classes.links} to="/">Search</Link></Button>
+          <Button color="inherit"><Link className={classes.links} to="saved">Saved</Link></Button>
         </Toolbar>
       </AppBar>
     </div>
