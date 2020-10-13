@@ -5,11 +5,17 @@ import React from "react";
 import { Container, Box, Typography } from '@material-ui/core';
 
 // Components
-import { Form, BookResult } from "../components";
+import { Nav, Title, Form, BookResult } from "../components";
 
 export const Search = () => {
   return (
     <>
+      <Nav />
+      <Container maxWidth="sm">
+        <Box component="span" m={1}>
+          <Title />
+        </Box>
+      </Container>
       <Form />
       <Container maxWidth="sm">
         <Box component="span" m={1}>

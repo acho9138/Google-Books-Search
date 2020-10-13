@@ -13,12 +13,6 @@ import { Saved } from "./pages/Saved";
 function App() {
   return (
     <>
-      <Nav />
-      <Container maxWidth="sm">
-        <Box component="span" m={1}>
-          <Title />
-        </Box>
-      </Container>
       <Router basename="/">
         <Switch>
           <Route exact path={["/", "/search"]}><Search /></Route>

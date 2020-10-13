@@ -1,8 +1,9 @@
 // React libraries
 import React from 'react';
+import { Link } from "react-router-dom";
 
 // Material UI libraries
-import { AppBar, Toolbar, Typography, Button, Link } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 
 // Styles
 import { styles } from "./Nav.styles";
@@ -18,7 +19,7 @@ export default function Nav() {
           <Typography variant="h6" className={classes.title}>
             Google Books
           </Typography>
-          <Button color="inherit"><Link to="search">Search</Link></Button>
+          <Button color="inherit"><Link to="/">Search</Link></Button>
           <Button color="inherit"><Link to="saved">Saved</Link></Button>
         </Toolbar>
       </AppBar>
