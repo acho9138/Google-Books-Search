@@ -20,25 +20,25 @@ const BookResult = (props) => {
         <Paper className={classes.paper} variant="outlined">
           <Grid container className={classes.title} spacing={3}>
             <Grid item xs={9}>
-              <Typography variant="h6" gutterBottom>Book Title</Typography>
-              <Typography variant="subtitle1" gutterBottom>Book Subtitle</Typography>
-              <Typography variant="subtitle2" gutterBottom>Written by: Author</Typography>
+              <Typography variant="h6" gutterBottom>{props.title}</Typography>
+              <Typography variant="subtitle1" gutterBottom>{props.subtitle}</Typography>
+              <Typography variant="subtitle2" gutterBottom>Written by: {props.author}</Typography>
             </Grid>
             <Grid item xs={3}>
-              <Button variant="contained">View</Button>
-              <Button variant="contained" color="primary">
-                {props.isSave ? "Save" : "Delete"}
-              </Button>
+              <Button variant="contained" href={props.link} className={classes.buttons}>View</Button>
+              {props.isSave ? (
+                <Button variant="contained" color="primary" onClick={props.onClick} className={classes.buttons}>Save</Button>
+              ) : (
+                  <Button variant="contained" color="secondary" onClick={props.onClick} className={classes.buttons}>Delete</Button>
+                )}
             </Grid>
             <Grid item xs={3}>
-              <img src={"https://via.placeholder.com/150"} />
+              <img src={props.image} alt="book cover" />
             </Grid>
             <Grid item xs={9}>
               <Typography variant="body1" gutterBottom>
-                body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-                unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-                dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-            </Typography>
+                {props.description}
+              </Typography>
             </Grid>
           </Grid>
         </Paper>
