@@ -23,7 +23,7 @@ npm i
 
 ## Usage
 
-![image](./public/assets/screenshot.png)
+![image](./client/public/assets/screenshot.png)
 
 Then run the following command to start the server.
 ```
