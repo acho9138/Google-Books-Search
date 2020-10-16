@@ -10,5 +10,8 @@ export const styles = makeStyles((theme) => ({
   title: {
     display: "flex",
     justifyContent: "space-between"
+  },
+  buttons: {
+    margin: "8px"
   }
 }));
